@@ -27,7 +27,7 @@ Comment.init(
         allowNull: false,
         references:
         {
-            model: 'User',
+            model: 'user',
             key: 'id'
         }
     },
@@ -37,7 +37,7 @@ Comment.init(
         allowNull: false,
         references:
         {
-            model: 'Post',
+            model: 'post',
             key: 'id'
         }
     }
