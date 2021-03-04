@@ -35,11 +35,11 @@ router.delete('/:id', (req, res) => {
         }
     })
     .then(dbCommentData => res.json(dbCommentData))
-        .catch(err => 
-        {
-            console.log(err);
-            res.status(400).json(err);
-        });
+    .catch(err => 
+    {
+        console.log(err);
+        res.status(400).json(err);
+    });
 });
 
 module.exports = router;
