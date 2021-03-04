@@ -14,7 +14,7 @@ app.use(routes);
 // turn on connection to db and server
 sequelize.sync(
     { 
-        force: true
+        force: false
     })
     .then(() => 
     {
